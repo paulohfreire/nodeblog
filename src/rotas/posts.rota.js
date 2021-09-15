@@ -3,7 +3,9 @@ const router = express.Router()
 const postMid = require('../middleware/validarPost.middleware')
 const { Post, Usuario } = require('../src/db/models/post')
 const path = require('path')
-const ErrorHandler = require('../utils/ErrorHandler');
+const ErrorHandler = require('../utils/ErrorHandler')
+const autenticar = require('../middleware/autenticacao.mid')
+
 
 var multer = require('multer')
 
@@ -27,9 +29,9 @@ const fileFilter = (req, file, cb) => {
 
 var upload = multer({ storage: storage, fileFilter: fileFilter })
 
-router.post('/', upload.single('foto'))
-router.post('/', postMid)
-router.put('/', postMid)
+router.post('/', autenticar, upload.single('foto'))
+router.post('/', autenticar, postMid)
+router.put('/', autenticar, postMid)
 
 router.get('/', async (req, res) => {
   const posts = await Post.findAll()

@@ -4,6 +4,7 @@ const rotaPosts = require('../rotas/posts.rota')
 var expressLayouts = require('express-ejs-layouts')
 const logger = require('./utils/logger')
 const logMiddleware = require('../middleware/log.mid')
+require('dotenv').config()
 
 const indexRoute = require('./rotas/index.rota')
 
