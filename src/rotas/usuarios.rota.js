@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const validarUsuario = require('../middleware/validarUsuario.middleware')
-const { Usuario } = require('../src/db/models/usuario')
+const validarUsuario = require('../../middleware/validarUsuario.middleware')
+const { Usuario } = require('../db/models/usuario')
 const jwt = require("jsonwebtoken");
 
 
@@ -71,7 +71,7 @@ router.put('/', async (req, res) => {
   }
 })
 
-router.delete('/', (req, res) => {
+router.delete('/', async(req, res) => {
   const id = req.query.id
   const usuario = await Usuario.findByPk(id)
 

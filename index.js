@@ -1,12 +1,12 @@
 const express = require('express')
-const rotaUsuario = require('../rotas/usuarios.rota')
-const rotaPosts = require('../rotas/posts.rota')
+const rotaUsuario = require('./src/rotas/usuarios.rota')
+const rotaPosts = require('./src/rotas/posts.rota')
 var expressLayouts = require('express-ejs-layouts')
-const logger = require('./utils/logger')
-const logMiddleware = require('../middleware/log.mid')
+const logger = require('./src/utils/logger')
+const logMiddleware = require('./middleware/log.mid')
 require('dotenv').config()
 
-const indexRoute = require('./rotas/index.rota')
+const indexRoute = require('./src/rotas/index.rota')
 
 const app = express()
 

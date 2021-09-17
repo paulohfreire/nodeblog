@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const postMid = require('../middleware/validarPost.middleware')
-const { Post, Usuario } = require('../src/db/models/post')
+const postMid = require('../../middleware/validarPost.middleware')
+const { Post, Usuario } = require('../../src/db/models/post')
 const path = require('path')
-const ErrorHandler = require('../utils/ErrorHandler')
-const autenticar = require('../middleware/autenticacao.mid')
+const ErrorHandler = require('../../src/utils/ErrorHandler')
+const autenticar = require('../../middleware/autenticacao.mid')
 
 
 var multer = require('multer')
