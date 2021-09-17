@@ -2,3 +2,17 @@
 2021-09-17T14:26:31.609Z [info] Servidor pronto na porta 8080
 2021-09-17T14:26:44.599Z [info] Iniciando no ambiente development
 2021-09-17T14:26:44.601Z [info] Servidor pronto na porta 8080
+2021-09-17T14:31:55.605Z [info] Iniciando no ambiente development
+2021-09-17T14:31:55.607Z [info] Servidor pronto na porta 8080
+2021-09-17T14:32:18.943Z [debug] Requisição GET na rota /
+2021-09-17T15:51:12.368Z [info] Iniciando no ambiente development
+2021-09-17T15:51:12.372Z [info] Servidor pronto na porta 8080
+2021-09-17T16:29:32.797Z [info] Iniciando no ambiente development
+2021-09-17T16:29:32.800Z [info] Servidor pronto na porta 8080
+2021-09-17T16:29:41.430Z [debug] Requisição GET na rota /
+2021-09-17T16:31:09.161Z [debug] Requisição GET na rota /
+2021-09-17T17:35:09.758Z [info] Iniciando no ambiente development
+2021-09-17T17:35:09.761Z [info] Servidor pronto na porta 8080
+2021-09-17T17:35:19.909Z [debug] Requisição GET na rota /
+2021-09-17T17:35:20.112Z [debug] Requisição GET na rota /static/imgs/avatar.jpg
+2021-09-17T17:35:20.663Z [debug] Requisição GET na rota /favicon.ico

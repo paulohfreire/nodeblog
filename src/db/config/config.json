@@ -4,8 +4,7 @@
     "password": null,
     "database": "bend",
     "host": "127.0.0.1",
-    "dialect": "sqlite",
-    "storage": "./db/dev.sqlite"
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
